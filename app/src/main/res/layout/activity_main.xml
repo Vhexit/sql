@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edi_email"
+        app:layout_constraintStart_toStartOf="@+id/edi_email"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edi_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Enter Email Address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/edi_number"
+        app:layout_constraintStart_toStartOf="@+id/edi_number" />
+
+    <EditText
+        android:id="@+id/edi_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="253dp"
+        android:ems="10"
+        android:hint="Enter ID Number"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/btn_save"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="43dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edi_number" />
+
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="24dp"
+        android:text="View"
+        app:layout_constraintBottom_toTopOf="@+id/btn_delete"
+        app:layout_constraintStart_toEndOf="@+id/btn_save" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="66dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="@+id/btn_view"
+        app:layout_constraintStart_toStartOf="@+id/btn_save"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
